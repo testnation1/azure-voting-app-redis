@@ -6,8 +6,9 @@ pipeline {
             steps {
                 echo "$GIT_BRANCH"
             }
-        Stage('Docker Build')
-            steps {
+        }
+        Stage('Docker Build') {
+           steps {
                 pwsh(script: 'docker images -a')
                 pwsh(script: """
                     cd azure-vote/
