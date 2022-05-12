@@ -7,7 +7,8 @@ pipeline {
                 echo $GIT_BRANCH
             }
 
-             }   
+                
         }
     }
+
 }
